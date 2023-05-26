@@ -1,26 +1,29 @@
-function verificacao() {
-    const salarioMinimo = 1320;
-    const idadeMinima = 16;
-
-    const dataNascimento = new Date(document.getElementById("dataNascimento").value);
-    const rendaFamiliar = parseFloat(document.getElementById("rendaFamiliar").value);
-    const quantidadeMoradores = parseInt(document.getElementById("quantidadeMoradores").value);
+function calcularAdmissao() {
+    let idade = document.getElementById('aInput').value;
+    let renda = parseFloat(document.getElementById('bInput').value);
+    let pessoas = parseInt(document.getElementById('cInput').value);
 
     const hoje = new Date();
-    const anosCompletos = hoje.getFullYear() - dataNascimento.getFullYear();
-    const mes = hoje.getMonth() - dataNascimento.getMonth();
-    if (mes < 0 || (mes === 0 && hoje.getDate() < dataNascimento.getDate())) {
-        anosCompletos--;
-    }
-    const rendaPerCapita = rendaFamiliar / quantidadeMoradores;
+    const nasc = new Date(idade);
+    let idadeconver = hoje.getFullYear() - nasc.getFullYear();
 
+    let rendapercapita = renda / pessoas;
 
-    if (anosCompletos >= idadeMinima && rendaPerCapita <= 1.5 * salarioMinimo) {
-        const telefoneContato = "123456789";
-        const mensagem = "Parabéns! Você está autorizado a realizar a matrícula no PSG. Entre em contato pelo telefone " + telefoneContato + " para mais informações."
-        alert(mensagem);
+    let resultadoDiv = document.getElementById('resultado');
+
+    if (idadeconver >= 16 && rendapercapita <= 1.5) {
+        resultadoDiv.innerHTML = `Bem Vindo ao PSG. (0800-777-3622) Sua idade é ${idadeconver} anos.`;
+        resultadoDiv.classList.remove('desfavoravel');
+        resultadoDiv.classList.add('favoravel');
+    } else if (idadeconver < 16) {
+        resultadoDiv.innerHTML = "Você Não Tem Idade Suficiente.";
+        resultadoDiv.classList.remove('favoravel', 'desfavoravel');
+    } else if (rendapercapita > 1.5) {
+        resultadoDiv.innerHTML = `Você Ultrapassou O Limite Da Renda Per Capita. Sua idade é ${idadeconver} anos.`;
+        resultadoDiv.classList.remove('favoravel');
+        resultadoDiv.classList.add('desfavoravel');
     } else {
-        const mensagem = "Desculpe, você não se adequa às condições de elegibilidade do programa PSG.";
-        alert(mensagem);
+        resultadoDiv.innerHTML = "Preencha Algum Campo.";
+        resultadoDiv.classList.remove('favoravel', 'desfavoravel');
     }
 }

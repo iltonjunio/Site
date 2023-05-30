@@ -9,54 +9,522 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="js/bootstrap.bundle.min.js">
     <script src="js/script.js"></script>
-    <title>Renda familiar</title>
-    <style>
-        .result-container {
-            background-color: #e7f1ff;
-            padding: 20px;
-            color: black;
-            border: 1px solid #dee2e6;
-            border-radius: 5px;
-        }
-
-        .result-container.desfavoravel {
-            background-color: #ffcccc;
-            border-color: #ff3333;
-        }
-    </style>
+    <title>Senac</title>
 </head>
 
 <body>
-    <body>
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-12 ">
-                    <div class="p-3 m-3 bg-light bg-dark-subtle border border-info border-info rounded">
-                        <h2>Formulário</h2>
-                        <div class="input-group mb-3">
-                            <label for="aInput">Data Nasc.</label>
-                            <input type="date" id="aInput" class="form-control">
-                        </div>
-                        <div class="input-group mb-3">
-                            <label for="bInput">Renda Percápta</label>
-                            <input type="number" id="bInput" class="form-control" placeholder="Renda Percápta">
-                        </div>
-                        <div class="input-group mb-3">
-                            <label for="cInput">Qtos moradores</label>
-                            <input type="number" id="cInput" class="form-control" placeholder="Qtos moradores">
-                            <button onclick="calcularAdmissao()" class="btn btn-primary">Calcular</button>
+    <header class="bg-secondary-subtle">
+        <div>
+            <img src="img/logo.png" width="120px" left="logo da instituição">
+        </div>
+        <nav>
+            <ul class="nav justify-content-end ">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/index2.html">Requerimentos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/index3.html">T</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/index4.html">T</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/index5.html">Tr</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/index6.html">E</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="row m-2 p-2 mb-2 bg-dark text-white">
+        <section class="row">
+            <div class="col p-5 bg-success p-2" style="--bs-bg-opacity: .5; ">
+                <h2>Quem somos</h2>
+                <br>
+                <h6>
+                    O Serviço Nacional de Aprendizagem Comercial, Senac, é uma instituição de Educação Profissional que
+                    foi criada em 10 de janeiro de 1946. De direito privado e sem fins lucrativos, a empresa é mantida
+                    por empresários do comércio de bens, serviços e turismo.
+                    A missão do Senac é ‘Educar para o trabalho em atividades de comércio de bens, serviços e turismo’.
+                    O Senac em Goiás desenvolve suas ações desde 18 de setembro de 1947. Desde a sua criação, a
+                    disponibiliza cursos de educação profissional focados na capacitação e aperfeiçoamento do cidadão, e
+                    sempre aliados ao desenvolvimento do Estado.
+                    Em mais de sete décadas dedicadas à educação, o Senac tem orgulho de ter atendido a população goiana
+                    em diversas modalidades de cursos livres, técnicos, de extensão, de graduação e pós-graduação,
+                    presencial e à distância. A instituição desenvolve também atendimento específico para empresas, o
+                    Atendimento Corporativo, com simpósios, palestras, seminários, workshops e oficinas customizadas,
+                    conforme a necessidade e particularidade de cada organização.
+                </h6>
+            </div>
+            <div class="row m-4">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Palestra sobre games movimenta o último dia da Jornada Acadêmica
+                            </h5>
+                            <img src="img/1.jpg" alt="foto da palestra" width="250">
+                            <p class="card-text">Chega ao fim mais uma edição da Jornada Acadêmica, que neste semestre
+                                foi realizada juntamente com o Missão Digital, promovido pelo Senac Infinite. Nesses
+                                três dias de programação, mais de 20 atividades extracurriculares foram ministradas,
+                                abrangendo os cursos de design gráfico, análise e desenvolvimento de sistemas, estética
+                                e tecnologia da informação.
+                            </p>
                         </div>
                     </div>
-                    <div id="resultado" class="result-container mt-3"></div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Workshops e oficinas marcam segundo dia da Jornada Acadêmica
+                            </h5>
+                            <img src="img/2.jpg" alt="foto da palestra" width="250">
+                            <p class="card-text">
+                                O segundo dia da Jornada Acadêmica contou com exposições, palestras, workshops e
+                                atendimentos estéticos. O evento, que é voltado para o público interno e externo, segue
+                                até quinta-feira (18), para conferir a programação e participar, basta acessar a
+                                plataforma do Sympla.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Abertura da Jornada Acadêmica e Missão Digital
+                            </h5>
+                            <img src="img/3.jpg" alt="foto da palestra" width="250">
+                            <p class="card-text">
+                                Começou nesta terça-feira (16) a 7ª edição da Jornada Acadêmica juntamente com a 2ª
+                                edição da Missão Digital, eventos realizados pela Faculdade Senac com objetivo de
+                                despertar nos alunos a vivência acadêmica com a exposição de trabalhos científicos,
+                                realização de wokshops e desafios, além de debater assuntos sobre tecnologia,
+                                empreendedorismo, mercado de trabalho e inovação.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Faculdade Senac realiza Jornada Acadêmica e Missão Digital
+                            </h5>
+                            <img src="img/4.jpg" alt="foto da palestra" width="250">
+                            <p class="card-text">
+                                A Faculdade Senac realiza entre os dias 16 e 18 de maio, a Jornada Acadêmica juntamente
+                                com o evento Missão Digital, promovido pelo Senac Infinite, o Hub de Inovação do Senac
+                                Goiás. Dentro da programação, serão realizados workshops, palestras, oficinas e
+                                exposição de projetos científicos feitos por alunos.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    
-    <footer>
-        </div>
+        </section>
+        <br>
+        <br>
+        <section>
+            <div class="row text-bg-success m-4">
+                <div class="col text-center">
+                    <h2 class="text-bg-danger m-2">Cursos</h2>
+                    <table class="table-primary ">
+                        <tr class="table-secondary text-white">
+                            <th>UNIDADE</th>
+                            <th>CURSOS</th>
+                            <th>Carga Horária</th>
+                            <th>TIPO DE ENSINO TURNO</th>
+                            <th>LOCAL</th>
+                            <th> MATRÍCULA</th>
+                            <th>TIPO DE CURSO</th>
+                            <th>PRÉ- REQUISITO VAGAS</th>
+                            <th>VAGAS</th>
+                        </tr>
+                        <tr>
+                            <td class="table-success text-white">
+                                CEP CORA CORALINA
+                            </td>
+                            <td class="table-success text-white">
+                                Informática Fundamental
+                                (Vagas exclusivas para OVG –
+                                Tecendo o Futuro)
+                            </td>
+                            <td class="table-success text-white">
+                                60
+                            </td>
+                            <td class="table-success text-white">
+                                Presencial
+                            </td>
+                            <td class="table-success text-white">
+                                Matutino e
+                                Vespertino
+                            </td>
+                            <td class="table-success text-white">
+                                Na Unidade
+                                ou na OVG –
+                                Tecendo o
+                                Futuro
+                            </td>
+                            <td class="table-success text-white">
+                                Aperfeiçoamento/
+                                Atualização
+                            </td>
+                            <td class="table-success text-white">
+                                12 anos e Ensino Fundamental
+                                Incompleto
+                            </td>
+                            <td class="table-success text-white">
+                                40
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-success text-white">
+                                CEP CORA CORALINA
+                            </td>
+                            <td class="table-success text-white">
+                                Fundamentos de Python I
+                                (Vagas exclusivas para
+                                alunos da CISCO)
+                            </td>
+                            <td class="table-success text-white">
+                                30
+                            </td>
+                            <td class="table-success text-white">
+                                Atendimento
 
-        </div>
-    </footer>
+                                Remoto
+                            </td>
+                            <td class="table-success text-white">
+                                Vespertino
+                            </td>
+                            <td class="table-success text-white">
+                                Na Unidade
+                            </td>
+                            <td class="table-success text-white">
+                                Aperfeiçoamento
+                                /Atualização
+                            </td>
+                            <td class="table-success text-white">
+                                15 anos e Ensino Fundamental
+                                Incompleto
+                            </td>
+                            <td class="table-success text-white">
+                                100
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-success text-white">
+                                CEP CORA CORALINA
+                            </td>
+                            <td class="table-success text-white">
+                                Desenvolvedor WEB Front-End
+                            </td>
+                            <td class="table-success text-white">
+                                108
+                            </td>
+                            <td class="table-success text-white">
+                                Presencial
+                            </td>
+                            <td class="table-success text-white">
+                                Noturno
+                            </td>
+                            <td class="table-success text-white">
+                                Na Unidade
+                                ou na OVG –
+                                Tecendo o
+                                Futuro
+                            </td>
+                            <td class="table-success text-white">
+                                Aperfeiçoamento
+                                /Atualização
+                            </td>
+                            <td class="table-success text-white">
+                                15 anos e Ensino Fundamental
+                                Incompleto
+                            </td>
+                            <td class="table-success text-white">
+                                20
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-success text-white">
+                                CEP CORA CORALINA
+                            </td>
+                            <td class="table-success text-white">
+                                Assistente Administrativo
+                                (Vagas exclusivas para OVG –
+                                Tecendo o Futuro)
+                            </td>
+                            <td class="table-success text-white">
+                                160
+                            </td>
+                            <td class="table-success text-white">
+                                Presencial
+                            </td>
+                            <td class="table-success text-white">
+                                Matutino e
+                                Vespertino
+                            </td>
+                            <td class="table-success text-white">
+                                Na Unidade
+                                ou na OVG –
+                                Tecendo o
+                                Futuro
+                            </td>
+                            <td class="table-success text-white">
+                                Qualificação
+                                profissional
+                            </td>
+                            <td class="table-success text-white">
+                                16 anos e Ensino Médio
+                                Incompleto
+                            </td>
+                            <td class="table-success text-white">
+                                40
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-success text-white">
+                                CEP CORA CORALINA
+                            </td>
+                            <td class="table-success text-white">
+                                Operador de Computador
+                                (Vagas exclusivas para OVG –
+                                Tecendo o Futuro)
+                            </td>
+                            <td class="table-success text-white">
+                                196
+                            </td>
+                            <td class="table-success text-white">
+                                Presencial
+                            </td>
+                            <td class="table-success text-white">
+                                Matutino e
+                                Vespertino
+                            </td>
+                            <td class="table-success text-white">
+                                Na Unidade
+                                ou na OVG –
+                                Tecendo o
+                                Futuro
+                            </td>
+                            <td class="table-success text-white">
+                                Qualificação
+                                profissional
+                            </td>
+                            <td class="table-success text-white">
+                                15 anos e Ensino Fundamental
+                                Incompleto
+                            </td>
+                            <td class="table-success text-white">
+                                40
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-success text-white">
+                                CEP CORA CORALINA
+                            </td>
+                            <td class="table-success text-white">
+                                Administrador de Banco de Dados
+                            </td>
+                            <td class="table-success text-white">
+                                200
+                            </td>
+                            <td class="table-success text-white">
+                                Presencial
+                            </td>
+                            <td class="table-success text-white">
+                                Matutino
+                            </td>
+                            <td class="table-success text-white">
+                                Na Unidade ou
+                                no Site Senac
+                                GO
+                            </td>
+                            <td class="table-success text-white">
+                                Qualificação
+                                profissional
+                            </td>
+                            <td class="table-success text-white">
+                                15 anos e Ensino Fundamental
+                                Incompleto
+                            </td>
+                            <td class="table-success text-white">
+                                20
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-success text-white">
+                                CEP CORA CORALINA
+                            </td>
+                            <td class="table-success text-white">
+                                Programador de Sistemas
+                            </td>
+                            <td class="table-success text-white">
+                                200
+                            </td>
+                            <td class="table-success text-white">
+                                Presencial
+                            </td>
+                            <td class="table-success text-white">
+                                Matutino
+                            </td>
+                            <td class="table-success text-white">
+                                Na Unidade ou
+                                no Site Senac
+                                GO
+                            </td>
+                            <td class="table-success text-white">
+                                Qualificação
+                                profissional
+                            </td>
+                            <td class="table-success text-white">
+                                16 anos e Ensino Fundamental
+                                Incompleto
+                            </td>
+                            <td class="table-success text-white">
+                                20
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-success text-white">
+                                CEP CORA CORALINA
+                            </td>
+                            <td class="table-success text-white">
+                                Técnico em Administração
+                            </td>
+                            <td class="table-success text-white">
+                                1.000
+                            </td>
+                            <td class="table-success text-white">
+                                Presencial
+                            </td>
+                            <td class="table-success text-white">
+                                Matutino
+                            </td>
+                            <td class="table-success text-white">
+                                Na Unidade ou
+                                no Site Senac
+                                GO
+                            </td>
+                            <td class="table-success text-white">
+                                Habilitação Técnica
+                                de nível Médio
+                            </td>
+                            <td class="table-success text-white">
+                                16 anos e cursando o 2o ano do
+                                Ensino Médio (mínimo)
+                            </td>
+                            <td class="table-success text-white">
+                                30
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-success text-white">
+                                CEP CORA CORALINA
+                            </td>
+                            <td class="table-success text-white">
+                                Técnico em Informática
+                            </td>
+                            <td class="table-success text-white">
+                                1.200
+                            </td>
+                            <td class="table-success text-white">
+                                Presencial
+                            </td>
+                            <td class="table-success text-white">
+                                Matutino
+                            </td>
+                            <td class="table-success text-white">
+                                Na Unidade ou
+                                no Site Senac
+                                GO
+                            </td>
+                            <td class="table-success text-white">
+                                Habilitação Técnica
+                                de nível Médio
+                            </td>
+                            <td class="table-success text-white">
+                                15 anos e cursando o 2o ano do
+                                Ensino Médio (mínimo)
+                            </td>
+                            <td class="table-success text-white">
+                                25
+                            </td>
+                            
+                        </tr>
+
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+    <div class="row text-center m-2 p-2 mb-2">
+        <footer class="text-white text-center text-lg-start" style="background-color: #3f3b2f;">
+            <div class="container p-1">
+                <div class="row mt-4">
+                    <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                        <nav class="row span3 nav">
+                            <h2>Localização</h2>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15291.264758575744!2d-49.2363355!3d-16.6359917!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef250d5f74183%3A0x78e6118444fcfc2e!2sFaculdade%20Senac%20Goi%C3%A1s%20-%20Sede!5e0!3m2!1spt-BR!2sbr!4v1685389188309!5m2!1spt-BR!2sbr"
+                                width="200" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                            <div class="span3">
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <!-- <h5 class="text-uppercase mb-4 pb-1">Buscar </h5> 
+                            <div class="form-outline form-white mb-4"> 
+                                <input type="text" id="formControlLg" class="form-control form-control-lg" />
+                                <label class="form-label" for="formControlLg"></label>
+                            </div>-->
+                        <ul class="fa-ul" style="margin-left: 1.65em;">
+                            <li class="mb-3">
+                                <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">
+                                    Av. Gen.
+                                    Rodrigo
+                                    Octávio
+                                    Av. Caiapó, Qd. 89, Lt. 41/49, nº 909 - St. Santa Genoveva Goiânia-GO CEP:
+                                    4672-400 Fone:
+                                    (62) 3309-6300
+                                </span>
+                            </li>
+                            <li class="mb-3">
+                                <span class="fa-li">
+                                    <i class="fas fa-envelope"></i></span><span class="ms-2">www.go.senac.br/faculdader
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4">
+                            Horário de Atendimento
+                        </h5>
+                        <table class="table text-center text-white">
+                            <tbody class="font-weight-normal">
+                                <tr>
+                                    <td>Segunda - Sexta:</td>
+                                    <td>8:00 as 18:00</td>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2023 Copyright: Ilton Junio
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>

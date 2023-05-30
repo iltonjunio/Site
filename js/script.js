@@ -40,18 +40,18 @@ function calcularMedia() {
 }
 
 function calcularPresencas() {
-        let pr1 = document.querySelector('input[name="presenca1]:checked').value
-        let pr2 = document.querySelector('input[name="presenca2]:checked').value
-        let pr3 = document.querySelector('input[name="presenca3]:checked').value
-        let pr4 = document.querySelector('input[name="presenca4]:checked').value
-        let pr5 = document.querySelector('input[name="presenca5]:checked').value
-        let pr6 = document.querySelector('input[name="presenca6]:checked').value
-        let pr7 = document.querySelector('input[name="presenca7]:checked').value
-        let pr8 = document.querySelector('input[name="presenca8]:checked').value
-        let pr9 = document.querySelector('input[name="presenca9]:checked').value
-        let pr10 = document.querySelector('input[name="presenca10]:checked').value
-        let pr11 = document.querySelector('input[name="presenca11]:checked').value
-        let pr12 = document.querySelector('input[name="presenca12]:checked').value
+        let pr1 = document.querySelector('input[name="presenca1"]:checked').value
+        let pr2 = document.querySelector('input[name="presenca2"]:checked').value
+        let pr3 = document.querySelector('input[name="presenca3"]:checked').value
+        let pr4 = document.querySelector('input[name="presenca4"]:checked').value
+        let pr5 = document.querySelector('input[name="presenca5"]:checked').value
+        let pr6 = document.querySelector('input[name="presenca6"]:checked').value
+        let pr7 = document.querySelector('input[name="presenca7"]:checked').value
+        let pr8 = document.querySelector('input[name="presenca8"]:checked').value
+        let pr9 = document.querySelector('input[name="presenca9"]:checked').value
+        let pr10 = document.querySelector('input[name="presenca10"]:checked').value
+        let pr11 = document.querySelector('input[name="presenca11"]:checked').value
+        let pr12 = document.querySelector('input[name="presenca12"]:checked').value
         let pre = (pr1 + pr2 + pr3 + pr4 + pr5 + pr6 + pr7 + pr8 + pr9 + pr10 + pr11 + pr12)
         let prm = ((pre / 12) * 100)
         return prm

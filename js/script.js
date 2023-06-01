@@ -65,7 +65,13 @@ function calcularPresencas() {
 
         if (media >= 6.0 && presencas >= 75) {
             resultado.textContent = "Aluno Aprovado!";
-        } else {
+
+        } 
+        else if (media >= 5 && media < 6 && presencas >= 75){
+            resultado.textContent = "Recuperação!";
+
+        }
+        else {
             resultado.textContent = "Aluno Reprovado!";
         }
 }
